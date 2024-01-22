@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initail-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="Ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="navBar">
+        <div class="nnaavv">
+            <div class="EcommerceLogo">Ecommerce.in</div>
+            <div class="UserLocation">
+                <a href="#" class="loco"><i class="fa-solid fa-location-dot"></i></a>
+                <div class="Locationtext">
+                    <h3>Hello</h3>
+                    <p>Select your address</p>
+                </div>
+            </div>
+            <div class="SearchProduct">
+                <div class="Categories">
+                    <select name="Categories" id="ItemCategories">
+                        <option value="" id="allItem">- ALL - <span><i class="fa-solid fa-caret-down"></i></span>
+                        </option>
+                    </select>
+                </div>
+                <div class="SearchBox">
+                    <input type="text" name="" id="ItemSearch" placeholder="Search Product.in">
+                </div>
+                <div class="SearchIcon">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+            <div class="Language">
+                <div class="defaultLanguage">
+                    <img src="Image/flag.png" alt="">
+                    <span id="defualt">EN</span>
+                    <span><i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <div class="languageOption">
+                    <select name="language" id="langOption">
+                        <option value="Hindi">Hindi</option>
+                        <option value="English">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Punjabi">Punjabi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="AccountSignIn">
+                <h4>Hello, sign in</h4>
+                <h2>Account & Lists <span><i class="fa-solid fa-caret-down"></i></span> </h2>
+            </div>
+            <div class="ReturnOrder">
+                <h4>Return</h4>
+                <h2>& Order</h2>
+            </div>
+            <div class="CartQuantity">
+                <h1>0</h1>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="navListCategories">
+        <div class="list">
+            <div class="navOption">
+                <div class="all">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <span>All</span>
+                    <div class="allSectionBar">
+                        <div class="allSectionOptions">
+                            <div class="title">hello, sign in</div>
+                            <div class="tranding">
+                                <div class="optionTitle">
+                                    <h1>Tranding</h1>
+                                </div>
+                                <a href="#">best sellers</a>
+                                <a href="#">new release</a>
+                                <a href="#">mover and shakers</a>
+                            </div>
+                            <div class="digitalContentDevice">
+                                <div class="optionTitle">
+                                    <h1>digital Content Device</h1>
+                                </div>
+                                <a href="#">echo & alexa </a><span><i class="fa-solid fa-caret-right"></i></span>
+                                <a href="#">fire tv</a><span><i class="fa-solid fa-caret-right"></i></span>
+                                <a href="#">e-readers & e-books</a><span><i class="fa-solid fa-caret-right"></i></span>
+                                <a href="#">audible audiobooks</a>
+                                <span><i class="fa-solid fa-caret-right"></i></span>
+                                <br>
+                                <a href="#">prime video</a><span><i class="fa-solid fa-caret-right"></i></span>
+                                <a href="#">prime music</a><span><i class="fa-solid fa-caret-right"></i></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="closeAllOption">
+                                <a href="#"><i class="fa-solid fa-xmark" id="close"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showTv">
+                    <h1>TV's show</h1>
+                </div>
+                <div class="sell">
+                    <h1>Sell</h1>
+                </div>
+                <div class="bestSell">
+                    <h1>Best sellers</h1>
+                </div>
+                <div class="todayDeals">
+                    <h1>Today's Deals</h1>
+                </div>
+                <div class="mobiles">
+                    <h1>Mobiles</h1>
+                </div>
+                <div class="customerService">
+                    <h1>Customer service</h1>
+                </div>
+                <div class="prime">
+                    <h1></h1>prime <span><i class="fa-solid fa-caret-down"></i></span>
+                </div>
+                <div class="elctronics">
+                    <h1>Electronics</h1>
+                </div>
+                <div class="newRelease">
+                    <h1>new release</h1>
+                </div>
+                <div class="giftsIdea">
+                    <h1>gifts ideas</h1>
+                </div>
+                <div class="fashion">
+                    <h1>fashion</h1>
+                </div>
+            </div>
+            <div class="showNow">Great Bharat Festiv Season Sale</div>
+        </div>
+    </section>
+
+
+    <section id="imageSlider">
+        <div class="slide">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img src="Image/p6.jpg" alt="" id="imageSlide">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </section>
+
+    <section id="ItemContainers">
+        <div class="AllTypeOfItemContainer">
+            <div class="Water bottles">
+                <h1>Min. 60% off | Water bottles, lunch boxes, jars & more</h1>
+                <div class="waterItem">
+                    <div class="waterItemImage1">
+                        <img src="Image/home1.jpg" alt="">
+                        <p>Under ₹499 | Pots, pans & more</p>
+                    </div>
+                    <div class="waterItemImage2">
+                        <img src="Image/home2.jpg" alt="">
+                        <p>Min. 60% off | Kitchen jars & containers</p>
+                    </div>
+                    <div class="waterItemImage3">
+                        <img src="Image/home3.jpg" alt="">
+                        <p>Under ₹299 | Kitchen accessories & more</p>
+                    </div>
+                    <div class="waterItemImage4">
+                        <img src="Image/home4.jpg" alt="">
+                        <p>Under ₹499 | Bottles, lunch boxes & more</p>
+                    </div>
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="headphones">
+                <h1>Starting ₹349 | Bestselling headphones</h1>
+                <div class="headphonesImage">
+                    <img src="Image/headphone.jpg" alt="">
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="television">
+                <h1>Great offers on wide range of TVs for every room</h1>
+                <div class="televisionImage">
+                    <div class="tele1">
+                        <img src="Image/tv32.jpg" alt="">
+                        <p>Budget TVs | Up to 60% off</p>
+                    </div>
+                    <div class="tele1">
+                        <img src="Image/tv43.jpg" alt="">
+                        <p>Budget TVs | Up to 60% off</p>
+                    </div>
+                    <div class="tele1">
+                        <img src="Image/tv55.jpg" alt="">
+                        <p>Budget TVs | Up to 60% off</p>
+                    </div>
+                    <div class="tele1">
+                        <img src="Image/tv65.jpg" alt="">
+                        <p>Budget TVs | Up to 60% off</p>
+                    </div>
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="sponsoredSignInbest">
+                <div class="signInBest">
+                    <h1>Sign in for your best experience</h1>
+                    <button id="signInSecurely">Sign In Securely</button>
+                </div>
+                <div class="sponsoredImage">
+                    <img src="Image/sponsered.jpg" alt="">
+                </div>
+                <a href="#">sponsered</a>
+            </div>
+
+            <div class="headphones">
+                <h1>Great Indian Festival | Shop all deals</h1>
+                <div class="headphonesImage">
+                    <img src="Image/deals.jpg" alt="">
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="home appliances">
+                <h1>Up to 60% off | Top offers on home appliances</h1>
+                <div class="appliancesImage">
+                    <div class="tele1">
+                        <img src="Image/appliances1.jpg" alt="">
+                        <p>Refrigerators | Up to 60% off</p>
+                    </div>
+                    <div class="appliancesImage">
+                        <img src="Image/appliances2.jpg" alt="">
+                        <p>Washing machines | Up to 65% off</p>
+                    </div>
+                    <div class="appliancesImage">
+                        <img src="Image/appliances3.jpg" alt="">
+                        <p>AC | Starting 19,999</p>
+                    </div>
+                    <div class="appliancesImage">
+                        <img src="Image/appliances4.jpg" alt="">
+                        <p>Microwaves | Up to 60% off</p>
+                    </div>
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="laptop">
+                <h1>Up to 80% off | Laptops, smartwatches & headphones</h1>
+                <div class="laptopImage">
+                    <img src="Image/laptop.jpg" alt="">
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+            <div class="Shoes & handbags">
+                <h1>Starting ₹199 | Shoes & handbags</h1>
+                <div class="handbagsImage">
+                    <div class="shoesHand">
+                        <img src="Image/handbags1.jpg" alt="">
+                        <p>Sports shoes/p>
+                    </div>
+                    <div class="shoesHand">
+                        <img src="Image/handbags2.jpg" alt="">
+                        <p>Men's shoes</p>
+                    </div>
+                    <div class="shoesHand">
+                        <img src="Image/handbags3.jpg" alt="">
+                        <p>women shoes</p>
+                    </div>
+                    <div class="shoesHand">
+                        <img src="Image/handbags4.jpg" alt="">
+                        <p>handbags</p>
+                    </div>
+                </div>
+                <a href="#">Sell all offers</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Blockbuster">
+        <div class="block">
+            <div class="BlockbusterTitle">
+                <h1>Blockbuster deals</h1>
+                <a href="#">Sell all offers</a>
+            </div>
+            <div class="BlockbusterItemContainer">
+                <div class="mobil">
+                    <img src="Image/block1.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block2.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block3.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block4.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block5.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block6.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block7.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block8.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block9.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block10.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block11.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block13.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block14.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block15.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block16.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+                <div class="mobil">
+                    <img src="Image/block17.jpg" alt="">
+                    <button>Up to 39% off</button>
+                    <span>Great Indian Festival</span>
+                    <p>Top-Rated Laptops: 4 Stars & Unbeata…</p>
+                    <p>₹7,999.00M.R.P.: <span style="text-decoration: line-through;">₹10,999.00</span></p>
+                </div>
+            </div>
+    </section>
+
+    <section id="footer">
+        <div class="backToTop">
+            <a href="#">back to top</a>
+        </div>
+        <div class="footerOption">
+            <div class="getToKnow">
+                <h1>Get to Know Us</h1>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="connectWithUs">
+                <h1>Connect with Us</h1>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="makeMoneyWithUs">
+                <h1>Make Money with Us</h1>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfilment by Amazon</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Amazon Pay on Merchants</a>
+            </div>
+            <div class="letUsHelp">
+                <h1>Let Us Help You</h1>
+                <a href="#">COVID-19 and Amazon</a>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon App Download</a>
+                <a href="#">help</a>
+            </div>
+        </div>
+        <div class="navFooterLine"></div>
+        <div class="branch">
+            <div class="branchTitle">
+                <a href="#">Ecommerce.in</a>
+                <select name="language" id="langOption">
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">Hindi</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Punjabi">Punjabi</option>
+                </select>
+                <span><img src="Image/browser.jpg" alt=""></span>
+            </div>
+            <div class="ourBranch">
+                <a href="#">Australia</a>
+                <a href="#">Brazil</a>
+                <a href="#">Canada</a>
+                <a href="#">China</a>
+                <a href="#">France</a>
+                <a href="#">Germany</a>
+                <a href="#">Italy</a>
+                <a href="#">India</a>
+                <a href="#">Japan</a>
+                <a href="#">Mexico</a>
+                <a href="#">Netherland</a>
+                <a href="#">Poland</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="Ecommerce.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg,#fc0251,#f87306);
+}
+
+.container{
+    padding: 20px 40px;
+    border-radius: 15px;
+    background: #fff;
+    position: relative;
+    top: 100px;
+    min-height: 250px;
+    width: 500px;
+}
+
+.container h1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+img{
+    margin-left: 10px;
+    width: 60px;
+}
+
+.container h1{
+    color: #1f1cd3;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.createToDo{
+    background: #edeef0;
+    border-radius: 30px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createToDo input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    font-weight: 14px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background: #ff7700;
+    border-radius: 30px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    padding: 14px 50px;
+}
+
+.task{
+    margin-top: 10px;
+}
+
+.task p{
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task p::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 12px;
+    left: 8px;
+    background-image: url(ImageGene/unchecked.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.task p.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.task p.checked::before{
+    content: '';
+    background-image: url(ImageGene/checked.png);
+}
+
+.task p span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.task p span:hover{
+    background-color: #edeef0;
+}

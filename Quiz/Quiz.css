@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Gabarito&family=Kaushan+Script&family=Merriweather:wght@300&family=Oswald:wght@200;400;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300&family=Roboto+Mono:wght@300&family=Roboto:wght@700&family=Source+Sans+3:wght@300&family=Syncopate&family=Ubuntu:ital,wght@0,500;1,500&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+body{
+    background-color: #0c0571;
+}
+
+.container{
+    padding: 30px;
+    position: relative;
+    bottom: 250px;
+    left: 50%;
+    width: 90%;
+    max-width: 650px;
+    border: 1px solid black;
+    background-color: #fff;
+    height: 550px;
+    transform: translate(-50%,50%);
+    border-radius: 50px;
+}
+
+.container h1{
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.QuestionOption p{
+    cursor: pointer;
+    font-size: 1.3rem;
+    height: auto;
+    background-color: #825a5a;
+    border: 2px solid #f09898;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.quiz #nextQuestion{
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    margin-left: 30%;
+}
+
+.QuestionOption p:hover{
+    transition: all 0.5s ease-in;
+    background-color: wheat;
+}
+
+.quiz button:hover{
+    color: black;
+    background-color: #e19e23;
+    transition: all 0.4s ease-in;
+}
+
+.correct{
+    background-color: #0ce35e;
+}
+
+.incorrect{
+    background-color: #e32c0c;
+}

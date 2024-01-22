@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imageGenerater.css">
+    <title>Image Generator</title>
+</head>
+<body>
+    <section id="container">
+        <div class="content">
+            <h1>AI Image Generator Tools Javascript</h1>
+            <p>
+                Covert your text into an image within a second using this 
+                Javascript-powered AI image Generator tool.
+            </p>
+            <form action="#" class="generate-form">
+                <input type="text" required placeholder="Describe what you want to see" class="prompt-input">
+                <div class="image-control">
+                    <select class="control">
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Image</option>
+                        <option value="3">3 Image</option>
+                        <option value="4" selected>4 Image</option>
+                    </select>
+                    <button type="submit" class="generate-btn">Generate</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="imgae-gallery">
+        <div class="img-card">
+            <img src="Image/img-1.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="Image/download.svg" alt="">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="Image/img-2.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="Image/download.svg" alt="">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="Image/img-3.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="Image/download.svg" alt="">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="Image/img-4.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="Image/download.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <script src="imageGenerater.js"></script>
+</body>
+</html>

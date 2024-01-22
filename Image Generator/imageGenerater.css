@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Kaushan+Script&family=Merriweather:wght@300&family=Oswald:wght@200;400;600&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300&family=Roboto+Mono:wght@300&family=Syncopate&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 46vh;
+    background-image: url("Image/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    color: #fff;
+    text-align: center;
+    max-width: 750px;
+    padding: 0 15px;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.generate-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.generate-form .prompt-input {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+
+.generate-form .image-control {
+    display: flex;
+    height: 100%;
+    gap: 15px;
+}
+
+.generate-form .control {
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.generate-form .generate-btn {
+    font-size: 1rem;
+    padding: 0px 25px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: #4949e7;
+}
+
+.imgae-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    max-width: 1250px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgae-gallery .img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 285px;
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    background: #f2f2f2;
+}
+
+.imgae-gallery .img-card.loading img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.imgae-gallery .img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgae-gallery .img-card .download-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 30px;
+    background: #fff;
+    padding: 10px 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgae-gallery .img-card:not(.loading):hover .download-btn {
+    display: flex;
+    transition: 2s;
+}
+
+.imgae-gallery .img-card .download-btn img {
+    width: 14px;
+    height: 14px;
+}
+
+@media screen and (max-width: 615px) {
+    .imgae-gallery .img-card {
+        display: grid;
+        grid-gap: 10rem;
+        grid-template-rows: repeat(auto-fit, minmax(260px, auto));
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .generate-form {
+        margin-top: 20px;
+        border-radius: 30px;
+        height: 40px;
+        background-color: #fff;
+        width: 100%;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .generate-form .image-control {
+        height: 40px;
+        margin-top: 15px;
+        justify-content: flex-end;
+    }
+    .imgae-gallery .img-card img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .imgae-gallery .img-card .download-btn
+    {
+        position: absolute;
+        bottom: 40px;
+        display: none;
+    }
+    .imgae-gallery .img-card:not(.loading):hover .download-btn
+    {
+        display: flex;
+    }
+    .imgae-gallery .img-card {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imgae-gallery .img-card
+    {
+        width: 100%;
+    }
+    .generate-form .image-control
+    {
+        height: 30px;
+        width: 100%;
+    }
+    .imgae-gallery .img-card .download-btn
+    {
+        position: absolute;
+        bottom: 80px;
+        display: none;
+    }
+    .imgae-gallery .img-card {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+
+#icon
+{
+    font-size: 100px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Gabarito&family=Kaushan+Script&family=Merriweather:wght@300&family=Oswald:wght@200;400;600&family=Playfair:opsz,wght@5..1200,300&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300&family=Roboto+Mono:wght@300&family=Roboto:wght@700&family=Source+Sans+3:wght@300&family=Syncopate&family=Ubuntu:ital,wght@0,500;1,500&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair', serif;
+}
+
+body{
+    background-color: #bbc6fa;
+}
+
+.container{
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+    color: black;
+    background-color: #fff;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0,0.15);
+}
+
+.container h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.container h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    background-color: blue;
+    transform: translateX(-50%);
+}
+
+.container blockquote{
+    font-size: 26px;
+    min-height: 120px;
+}
+
+.container blockquote::after,.container blockquote::before{
+    content: '"';
+}
+
+.container span{
+    margin-bottom: 20px;
+    float: right;
+    display: block;
+    position: relative;
+}
+
+.container span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.container div{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container div button{
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: rgb(23, 124, 229);
+    border: none;
+    outline: none;
+}
+
+.container div button i{
+    margin-right: 5px;
+}
